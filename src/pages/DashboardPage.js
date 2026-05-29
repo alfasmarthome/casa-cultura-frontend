@@ -107,6 +107,7 @@ export default function DashboardPage() {
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             initialView='dayGridMonth'
             headerToolbar={{ left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,timeGridDay' }}
+            buttonText={{ today: 'Hoy', month: 'Mes', week: 'Semana', day: 'Día' }}
             events={events}
             dateClick={handleDateClick}
             eventClick={handleEventClick}
